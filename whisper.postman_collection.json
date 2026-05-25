@@ -1,0 +1,132 @@
+{
+  "info": {
+    "name": "Whisper African Languages",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:4000/"
+      }
+    },
+    {
+      "name": "Languages",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:4000/languages"
+      }
+    },
+    {
+      "name": "Transcribe - Zulu (zu)",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:4000/transcribe",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "language",
+              "value": "zu",
+              "type": "text"
+            },
+            {
+              "key": "audio",
+              "type": "file",
+              "src": "/Users/koushikpanda/Desktop/swahili-whisper-local/5f89673649d72279770c9ff1837adef453f3d428-zulu.mp3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Transcribe - Swahili (sw)",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:4000/transcribe",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "language",
+              "value": "sw",
+              "type": "text"
+            },
+            {
+              "key": "audio",
+              "type": "file",
+              "src": "/Users/koushikpanda/Desktop/swahili-whisper-local/98692c990a159c1f57ecade726633b0a2375bc0c-sw.mp3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Transcribe - Afrikaans (af)",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:4000/transcribe",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "language",
+              "value": "af",
+              "type": "text"
+            },
+            {
+              "key": "audio",
+              "type": "file",
+              "src": "/Users/koushikpanda/Desktop/swahili-whisper-local/92e07d9b110d2327f469101ea1a85eee4c114562-af.mp3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Translate - Zulu → English",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:4000/translate",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "language",
+              "value": "zu",
+              "type": "text"
+            },
+            {
+              "key": "audio",
+              "type": "file",
+              "src": "/Users/koushikpanda/Desktop/swahili-whisper-local/5f89673649d72279770c9ff1837adef453f3d428-zulu.mp3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Translate - Swahili → English",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:4000/translate",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "language",
+              "value": "sw",
+              "type": "text"
+            },
+            {
+              "key": "audio",
+              "type": "file",
+              "src": "/Users/koushikpanda/Desktop/swahili-whisper-local/98692c990a159c1f57ecade726633b0a2375bc0c-sw.mp3"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

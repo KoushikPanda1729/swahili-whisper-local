@@ -1,0 +1,11 @@
+node_modules
+uploads
+outputs
+*.mp3
+*.wav
+*.m4a
+*.mpeg
+*.mp4
+*.ogg
+*.flac
+.DS_Store

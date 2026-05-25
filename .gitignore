@@ -1,0 +1,16 @@
+node_modules/
+uploads/
+outputs/
+.env
+.DS_Store
+*.mp3
+*.wav
+*.m4a
+*.mpeg
+*.mp4
+*.ogg
+*.flac
+*.json
+!package.json
+!package-lock.json
+!whisper.postman_collection.json
