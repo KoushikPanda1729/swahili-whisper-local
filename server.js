@@ -25,7 +25,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 // Languages not in Whisper's model — use auto-detection instead
-const WHISPER_UNSUPPORTED = new Set(["zu", "ig"]);
+const WHISPER_UNSUPPORTED = new Set(["zu", "ig", "st", "xh"]);
 
 function runWhisper(filePath, language, task) {
   return new Promise((resolve, reject) => {
